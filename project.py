@@ -101,7 +101,7 @@ def min_cut(G,u,v):
     return cut_value, subgraph_S, subgraph_T
 
 def main():
-    file_path = 'erdos_coauthors.txt'  # Change this to the desired file path
+    file_path = 'erdos_coauthors.txt' 
     all_execution_times = []
     all_graph_sizes = []
 
@@ -111,9 +111,7 @@ def main():
     final_clusters = []
     stats_per_depth = {}
     
-    print(f"\n=========================================")
     print(f"Processing graph: {file_path}")
-    print(f"=========================================")
     
     if file_path == 'karate.edgelist':
         G = read_csv_to_graph(file_path)
