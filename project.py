@@ -2,7 +2,6 @@ import networkx as nx
 import csv
 import time
 
-
 def read_csv_to_graph(file_path):
     G = nx.Graph()
     with open(file_path, mode='r') as file:
